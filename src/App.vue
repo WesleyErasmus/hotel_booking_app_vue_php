@@ -1,11 +1,13 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
+import { RouterView } from "vue-router";
 </script>
 <template>
-  <SideNavigationDrawer />
+  <!-- Conditionally rendering my nav by checking the name of the current route using v-if directive -->
+  <SideNavigationDrawer v-if="!['login'].includes($route.name)" />
 
-
-  <RouterView />
+  <main>
+    <RouterView />
+  </main>
 </template>
 <script>
 import SideNavigationDrawer from "./components/SideNavigationDrawer.vue";
