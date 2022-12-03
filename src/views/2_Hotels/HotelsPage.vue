@@ -1,6 +1,5 @@
 <template>
   <v-app id="app-content">
-    <v-navigation-drawer></v-navigation-drawer>
     <v-main>
       <h1>Hotels page</h1>
     </v-main>

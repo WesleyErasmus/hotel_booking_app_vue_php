@@ -16,13 +16,5 @@ export default {
 };
 </script>
 <style scoped>
-.hello {
-  position: absolute;
-  left: 300px;
-  z-index: 899;
-}
-.test-flex {
-  display: flex;
-  flex-direction: row;
-}
+
 </style>

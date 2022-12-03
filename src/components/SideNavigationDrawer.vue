@@ -1,10 +1,12 @@
 <template>
   <v-layout>
-    <v-navigation-drawer permanent location="left">
+    <!-- <v-app-bar>Test app bar</v-app-bar> -->
+    <v-navigation-drawer permanent location="left" :width="325">
       <template v-slot:prepend>
         <v-list-item
+          class="pa-5"
           lines="two"
-          prepend-avatar="https://randomuser.me/api/portraits/men/70.jpg"
+          prepend-avatar="https://randomuser.me/api/portraits/men/81.jpg"
           title="Wesley Erasmus"
           subtitle="Administrator"
         ></v-list-item>
@@ -15,36 +17,35 @@
       <v-list density="compact" nav>
         <RouterLink :to="{ name: 'dashboard' }">
           <v-list-item
-            prepend-icon="mdi-home-city"
-            title="Dashboard"
+            class="pa-4"
+            prepend-icon="mdi-apps"
             value="Dashboard"
-          ></v-list-item>
+            >Dashboard</v-list-item
+          >
         </RouterLink>
         <RouterLink :to="{ name: 'hotels' }">
-          <v-list-item
-            prepend-icon="mdi-account"
-            title="Hotels"
-            value="Hotels"
-          ></v-list-item>
+          <v-list-item class="pa-4" prepend-icon="mdi-home-city" value="Hotels"
+            >Hotels</v-list-item
+          >
         </RouterLink>
         <RouterLink :to="{ name: 'profile' }">
           <v-list-item
-            prepend-icon="mdi-account-group-outline"
-            title="Profile"
+            class="pa-4 drawer-list-item"
+            prepend-icon="mdi-account"
             value="Profile"
-          ></v-list-item>
+            >Profile</v-list-item
+          >
         </RouterLink>
       </v-list>
 
       <template v-slot:append>
         <RouterLink :to="{ name: 'login' }">
           <div class="pa-2">
-            <v-btn block> Logout </v-btn>
+            <v-btn block color="black"> Logout </v-btn>
           </div>
         </RouterLink>
       </template>
     </v-navigation-drawer>
-    <!-- <v-main> hello</v-main> -->
   </v-layout>
 </template>
 

@@ -1,6 +1,19 @@
-/* Positions App content next to the side navigation drawer */
+/* ********** POSITIONS APP CONTENT NEXT TO THE SIDE NAVIGATION DRAWER ********** */
 #app-content {
     position: absolute;
+    left: 335px;
     top: 0;
     z-index: 999;
+    padding: 1.1rem;
+}
+/* ******************************************************************* */
+
+/* Root Variables */
+:root {
+    --box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    --transparent-bg: rgba(218, 217, 217, 0.171);
 }

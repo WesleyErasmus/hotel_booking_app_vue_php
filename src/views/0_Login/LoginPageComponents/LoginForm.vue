@@ -1,6 +1,6 @@
 <template>
   <!-- ========== LOGIN FORM ========== -->
-  <v-card class="mx-auto">
+  <v-card class="mx-auto" title="Login">
     <v-container>
       <v-form v-model="loginForm" @submit.prevent="onSubmit" lazy-validation>
         <v-row>
