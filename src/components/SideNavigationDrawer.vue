@@ -37,9 +37,11 @@
       </v-list>
 
       <template v-slot:append>
-        <div class="pa-2">
-          <v-btn block> Logout </v-btn>
-        </div>
+        <RouterLink :to="{ name: 'login' }">
+          <div class="pa-2">
+            <v-btn block> Logout </v-btn>
+          </div>
+        </RouterLink>
       </template>
     </v-navigation-drawer>
     <!-- <v-main> hello</v-main> -->
@@ -53,11 +55,11 @@ export default {};
 <style scoped>
 /* Nav links styling */
 nav a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 nav a.router-link-exact-active {
-    text-decoration: none;
+  text-decoration: none;
 }
 </style>

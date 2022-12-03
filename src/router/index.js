@@ -1,14 +1,18 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Login from "../views/LoginPage.vue";
+
+// ========== Imported pages and components ==========
+import Login from "../views/0_Login/LoginPage.vue";
 import Dashboard from "../views/1_Dashboard/DashboardPage.vue";
 import Hotels from "../views/2_Hotels/HotelsPage.vue";
 import Profile from "../views/3_Profile/ProfilePage.vue";
+
+import PageNotFound from "../components/PageNotFound.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: "/login",
+      path: "/",
       name: "login",
       component: Login,
     },
@@ -26,6 +30,12 @@ const router = createRouter({
       path: "/profile",
       name: "profile",
       component: Profile,
+    },
+    {
+      // Sends a 404 message to pages that can't be found
+      path: "/:catchAll(.*)",
+      name: "PageNotFound",
+      component: PageNotFound,
     },
     // {
     // path: "/about",
