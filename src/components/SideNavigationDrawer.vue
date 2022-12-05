@@ -1,25 +1,21 @@
 <template>
   <v-layout>
-    <!-- <v-app-bar>Test app bar</v-app-bar> -->
-    <v-navigation-drawer permanent location="left" :width="325">
+    <v-navigation-drawer
+      permanent
+      location="left"
+      :width="325"
+      color="rgba(218, 217, 217, 0.171)"
+    >
       <template v-slot:prepend>
-        <v-list-item
-          class="pa-5"
-          lines="two"
-          prepend-avatar="https://randomuser.me/api/portraits/men/81.jpg"
-          title="Wesley Erasmus"
-          subtitle="Administrator"
-        ></v-list-item>
+        <v-list-item class="pa-5">
+          <div class="text-h2">Grandeur</div>
+          <!-- <p>Experience the luxury you deserve</p> -->
+        </v-list-item>
       </template>
-
-      <v-divider></v-divider>
 
       <v-list density="compact" nav>
         <RouterLink :to="{ name: 'dashboard' }">
-          <v-list-item
-            class="pa-4"
-            prepend-icon="mdi-apps"
-            value="Dashboard"
+          <v-list-item class="pa-4" prepend-icon="mdi-apps" value="Dashboard"
             >Dashboard</v-list-item
           >
         </RouterLink>

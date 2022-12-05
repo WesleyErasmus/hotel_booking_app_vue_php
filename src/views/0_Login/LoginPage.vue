@@ -80,7 +80,7 @@ export default {
   color: #fff;
   font-size: calc(20px + 5rem);
   line-height: 2.5;
-  text-shadow: var(--box-shadow);
+  /* text-shadow: var(--box-shadow); */
 }
 .login-page-subtitle {
   font-family: 'Italiana', serif;

@@ -1,13 +1,34 @@
 <template>
   <v-app id="app-content">
-    <v-main>
-      <h1>Hotels page</h1>
-    </v-main>
+    <div class="hotel-page-main-content">
+      <v-row>
+      <HotelCard class="hotel-card" />
+      <HotelCard class="hotel-card" />
+      <HotelCard class="hotel-card" />
+      <HotelCard class="hotel-card" />
+      <HotelCard class="hotel-card" />
+      <HotelCard class="hotel-card" />
+      <HotelCard class="hotel-card" />
+      <HotelCard class="hotel-card" />
+      <HotelCard class="hotel-card" />
+      </v-row>
+    </div>
   </v-app>
 </template>
 
 <script>
-export default {};
+import HotelCard from './HotelsPageComponents/HotelCard.vue';
+export default {
+  components: { HotelCard },
+};
 </script>
 
-<style></style>
+<style>
+.hotel-page-main-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hotel-card {
+  padding: 0 2rem;
+}
+</style>
