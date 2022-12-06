@@ -2,7 +2,7 @@
   <v-card
     :loading="loading"
     class="mx-5 my-12 hotel-card-body"
-    max-width="23vw"
+    max-width="20vw"
   >
     <template v-slot:loader="{ isActive }">
       <v-progress-linear

@@ -27,6 +27,7 @@ export default {
 .hotel-page-main-content {
   display: flex;
   flex-wrap: wrap;
+  width: 90%;
 }
 .hotel-card {
   padding: 0 2rem;
