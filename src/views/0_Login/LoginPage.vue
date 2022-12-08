@@ -2,7 +2,8 @@
   <div class="login-page-flex-container">
     <div class="login-page-image-section">
       <div class="login-page-heading-container">
-        <h1>Grandeur</h1>
+        <h1 class="text-h1">Grandeur</h1>
+        
       </div>
     </div>
     <h2 class="login-page-subtitle">Luxury Hotel Bookings.</h2>
@@ -72,15 +73,15 @@ export default {
 }
 .login-page-heading-container {
   box-shadow: var(--box-shadow);
-  padding: 3rem 10rem 8rem 10rem;
+  padding: 3rem 0rem 8rem 0rem;
+  width: 44vw;
   background: var(--transparent-bg);
-  text-align: center;
+  text-align: center; 
 }
 .login-page-heading-container h1 {
   color: #fff;
-  font-size: calc(20px + 5rem);
   line-height: 2.5;
-  /* text-shadow: var(--box-shadow); */
+  text-shadow: var(--box-shadow);
 }
 .login-page-subtitle {
   font-family: 'Italiana', serif;
@@ -104,6 +105,7 @@ export default {
   justify-content: center;
   text-shadow: rgb(255, 255, 255) 1px 0 60px;
   text-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-decoration: overline 1px solid white;
 }
 
 .login-page-image-section {
