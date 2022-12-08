@@ -1,6 +1,8 @@
 <template>
   <v-layout>
     <v-navigation-drawer
+      class="pr-2"
+      border="none"
       permanent
       location="left"
       :width="325"
