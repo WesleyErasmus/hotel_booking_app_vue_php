@@ -1,17 +1,23 @@
 <template>
-<v-app id="app-content">
+  <v-app id="app-content">
     <v-main>
-        <h1>Dashboard page</h1>
+      
+        <h1 class="text-h2">Your Bookings</h1>
+      
+      <h5 class="text-h5">
+        You have no current bookings. View out HOTELS to make a booking
+      </h5>
+
+      <BookingCard />
     </v-main>
-</v-app>
+  </v-app>
 </template>
 
 <script>
+import BookingCard from "./DashboardPageComponents/BookingsCard.vue";
 export default {
-
-}
+  components: { BookingCard },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

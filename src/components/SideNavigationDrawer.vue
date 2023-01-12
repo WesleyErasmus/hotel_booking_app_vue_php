@@ -17,13 +17,16 @@
 
       <v-list density="compact" nav>
         <RouterLink :to="{ name: 'dashboard' }">
+          <RouterLink :to="{ name: 'hotels' }">
+            <v-list-item
+              class="pa-4"
+              prepend-icon="mdi-home-city"
+              value="Hotels"
+              >Hotels</v-list-item
+            >
+          </RouterLink>
           <v-list-item class="pa-4" prepend-icon="mdi-apps" value="Dashboard"
-            >Dashboard</v-list-item
-          >
-        </RouterLink>
-        <RouterLink :to="{ name: 'hotels' }">
-          <v-list-item class="pa-4" prepend-icon="mdi-home-city" value="Hotels"
-            >Hotels</v-list-item
+            >Bookings</v-list-item
           >
         </RouterLink>
         <RouterLink :to="{ name: 'profile' }">
